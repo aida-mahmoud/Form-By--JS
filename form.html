@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frorm </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>           
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    <style>
+        body{
+            background-color:#3c40c6;
+
+        }
+      
+        input,select{
+            background-color: white;
+            border-radius: 5px;
+            width: 65%;
+            
+            height: 50px;
+            margin: 5px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: rgb(3, 3, 133);
+            border: 1px solid rgb(139, 140, 141);
+        }
+        form{
+            width: 55%;
+            margin-left: 24%;
+            margin-top:5%;
+            border: 1px solid black;
+            height: 90%;
+            width: 50%;
+            border-radius: 20px;
+            box-shadow: 5px 5px black;
+            grid-gap: 20px;
+            background-color: white;
+        }
+        form div{
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-left: 8%;
+            width: 90%;
+        }
+        button{
+            font-size: 25px;
+            background-color: red;
+            color: white;
+            width: 100px;
+            height: 40px;
+            margin-right: 0%;
+            border-radius: 15px;
+           
+        }
+        i{
+            width: 10px;
+            height: 10px;
+            color: black;
+
+        }
+        h1{
+            font-size: 50px;
+            width: 90%;
+            text-align: center;
+        }
+        #r1 ,#r2{
+            font-size: 20px;
+            width: 30px;
+        }
+        .error{
+            border: 2px solid red;
+        }
+        form i{
+            color: red;
+            font-weight: bold;
+            width: 90%;
+            font-size: 22px;
+            margin-left: 5%;
+            
+        }
+    </style>            
+</head>
+<body>
+    <form action="#">
+        <h1>CREATE AN ACCOUNT</h1> <i></i>
+        <div>
+        <input type="text" id="fname" placeholder="Your First Name" maxlength="15" >
+         <input type="text"id="lname" placeholder="Your Second Name" maxlength="15" >
+         <input type="text"id="uname" placeholder="Your User Name"maxlength="20" >
+        <input type="email"id="email" placeholder="Your Email"  >
+        <input type="tel"id="tel" placeholder="Your Phone number" maxlength="15" >
+        <input type="number"id="age" placeholder="Your Age" maxlength="2" >
+        <input type="text"id="edu" placeholder="Your Education" >
+        <select name = "dropdown" >
+            <option value = "Egypt" selected>Egypt</option>
+            <option value = "India">India</option>
+            <option value = "USA" >USA</option>
+            <option value = "china">china</option>
+            <option value = "Tunisia">Tunisia</option>
+        </select>
+        <input type="password"  id="pass1" placeholder="Your Password" >
+        <input type="password"  id="pass2" placeholder="Confirm Your Password">
+        <div>
+            <b id="r1">Female<input type="radio" name="gender" value="female" ></b>
+            <b id="r2">Male<input type="radio" name="gender" value="male"></b>
+       
+        </div>
+        
+        <button type="button">Submit</button>
+         </div>
+        
+    </form>
+
+    <script src="form.js">
+        
+    </script>
+</body>
+</html>
